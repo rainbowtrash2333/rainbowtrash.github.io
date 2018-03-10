@@ -18,11 +18,11 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
     <title>
         
-        fighting game 2.0｜rainbowtrash&#39;s blog
+        18/3/10 碎碎念｜rainbowtrash&#39;s blog
         
     </title>
 
-    <link rel="canonical" href="https://www.rainbowtrash.top/2018/02/07/fighting-game-2-0/">
+    <link rel="canonical" href="https://www.rainbowtrash.top/2018/03/10/18-3-10-碎碎念/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -145,15 +145,18 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
                 <div class="post-heading">
-                    <h1>fighting game 2.0</h1>
+                    <h1>18/3/10 碎碎念</h1>
                     
                     <span class="meta">
                          作者 rainbowtrash
                         <span>
-                          日期 2018-02-07
+                          日期 2018-03-10
                          </span>
                     </span>
                     <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#碎碎念"
+                           title="碎碎念">碎碎念</a>
                         
                     </div>
                 </div>
@@ -162,7 +165,7 @@
     </div>
     <div class="post-title-haojen">
         <span>
-            fighting game 2.0
+            18/3/10 碎碎念
         </span>
     </div>
 </header>
@@ -173,27 +176,22 @@
         <div class="row">
             <!-- Post Container -->
             <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
-                <p></p><h2>源码</h2><br><a href="https://github.com/rainbowtrash2333/my-stupid-game/blob/master/fighting_plain_2.0.cpp" target="_blank" rel="noopener">GitHub</a><p></p>
-<p></p><h2>笔记</h2><p></p>
-<p></p><h3>note 1</h3><p></p>
-<p><pre><br>   for (i = high - 1; i &gt; -1; –i) {<br>        for (j = width - 1; j &gt; -1; –j) {<br>        …………..<br>            else if (canvas[i][j] == 3) {<br>                new_canvas[i + 1][j] = 3;<br>                    new_canvas[i][j] = 0;<br>                        canvas[i][j] = 0;<br>            }<br>    …………<br></pre></p>
-<p>为什么不与上面</p><br><pre><br>    for (i = 0; i &lt; high; ++i) {<br>        for (j = 0; j &lt; width; ++j) {<br>        …………..<br></pre><br><p>合并</p><br><p>因为</p><br><pre> new_canvas[i + 1][j] = 3;</pre><br>i由0到high, 修改了i+1, 党循环到i=i+1时, 再次修改下一个i+1, 就BUG了.<br><p></p><br><h3>note 2</h3><br><p><br><pre><br> 1|   else if ((canvas[i][j] == 2) &amp;&amp; (canvas[i - 1][j] == 3)) {<br> 2|      new_canvas[i - 1][j] = 4;<br> 3|      new_canvas[i][j] = 0;<br> 4|       canvas[i - 1][j] = 0;<br> 5|       canvas[i][j] == 0;<br> 6|       score++;<br> 7|   }<br></pre><br></p><p>3行new_canvas[i][j] = 0;目的是防止没有赋值给new_canvas[i][j], 造成BUG<br></p><br><pre>note 3</pre><br><p>击中敌机与减生命逻辑不对, 因为敌机,子弹会相向移动, 因此敌机与子弹相距为2, 敌机与飞机同理</p>
-
+                <p></p><h2>开学一周了, 该立flag了</h2><p></p>
+<p><ol><br>    <li>好好学高数</li><br>    <li>英语得搞好</li><br>    <li>Java</li><br>    <li>小马也要放映了,一定得看直播</li><br>    <li>暂时想到这儿</li><br></ol></p>
+<p></p><h2>要做一个”2018昭通一中激励”视频</h2><p></p>
+<p></p><p>趁这个机会抱抱dalao的腿; 学习一些Pr Ae 之类的</p><p></p>
+<p></p><h2>对了, 云大樱花开了, 美</h2><p></p>
+<p></p><p>随便盗张图来23333</p><br><img src="https://img-top.rainbowtrash.top/www.rainbowtrash.top/2018/3/%E4%BA%91%E5%A4%A7_%E6%A8%B1%E8%8A%B1.gif"><p></p>
 
                 <hr>
                 
 
                 <ul class="pager">
                     
-                    <li class="previous">
-                        <a href="/2018/02/20/实时钟表/" data-toggle="tooltip" data-placement="top"
-                           title="实时钟表">&larr; Previous Post</a>
-                    </li>
-                    
                     
                     <li class="next">
-                        <a href="/2018/02/04/消方块游戏/" data-toggle="tooltip" data-placement="top"
-                           title="消方块游戏">Next Post &rarr;</a>
+                        <a href="/2018/03/04/工具收藏/" data-toggle="tooltip" data-placement="top"
+                           title="工具收藏">Next Post &rarr;</a>
                     </li>
                     
                 </ul>
@@ -215,7 +213,7 @@
 
             <div class="hidden-xs col-sm-3 toc-col">
                 <div class="toc-wrap">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-text">源码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-text">笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-text">note 1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-text">note 2</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-text">开学一周了, 该立flag了</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-text">要做一个”2018昭通一中激励”视频</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined"><span class="toc-text">对了, 云大樱花开了, 美</span></a></li></ol>
                 </div>
             </div>
         </div>
@@ -236,6 +234,9 @@
                         <a href="/tags/">FEATURED TAGS</a>
                     </h5>
                     <div class="tags">
+                        
+                        <a class="tag" href="/tags/#碎碎念"
+                           title="碎碎念">碎碎念</a>
                         
                     </div>
                 </section>
@@ -264,8 +265,8 @@
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "www-rainbowtrash-top";
-    var disqus_identifier = "https://www.rainbowtrash.top/2018/02/07/fighting-game-2-0/";
-    var disqus_url = "https://www.rainbowtrash.top/2018/02/07/fighting-game-2-0/";
+    var disqus_identifier = "https://www.rainbowtrash.top/2018/03/10/18-3-10-碎碎念/";
+    var disqus_url = "https://www.rainbowtrash.top/2018/03/10/18-3-10-碎碎念/";
 
     (function () {
         var dsq = document.createElement('script');
